@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  root "main#index"
+
+  get "/main" => "main#index", as: :main
+  get "/main/notify" => "main#notify", as: :notify
+  get "/main/no_notify" => "main#no_notify", as: :no_notify
 end

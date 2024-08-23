@@ -18,6 +18,12 @@
   </head>
 
   <body>
+    <% if notice %>
+      <p data-turbo-temporary>
+        <%= notice %>
+      </p>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>
