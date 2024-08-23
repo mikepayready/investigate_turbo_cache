@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   get "/main" => "main#index", as: :main
   get "/main/notify" => "main#notify", as: :notify
   get "/main/no_notify" => "main#no_notify", as: :no_notify
+  post "/main/notify" => "main#notify"
+  post "/main/no_notify" => "main#no_notify"
 end

@@ -9,3 +9,11 @@
 <p>
   <%= link_to "Do not show a notice.", no_notify_path %>
 </p>
+
+<p>
+  <%= button_to "Show a notice.", notify_path, method: :post %>
+</p>
+
+<p>
+  <%= button_to "Do not show a notice.", no_notify_path, method: :post %>
+</p>
