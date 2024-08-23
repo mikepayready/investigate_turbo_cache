@@ -6,6 +6,11 @@ class MainController < ApplicationController
     redirect_to main_path, notice: "Here is a temporary notice."
   end
 
+  def notify_now
+    flash.now[:notice] = "Here is a temporary notice."
+    render :index
+  end
+
   def no_notify
     redirect_to main_path
   end
